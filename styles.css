@@ -1,0 +1,49 @@
+.calculator {
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #e6f2ff; /* Light blue background */
+  }
+  
+  .display {
+    width: calc(100% - 20px);
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: #ccf5ff; /* Lighter blue display background */
+    border: 1px solid #99ccff; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 20px; /* Larger font size */
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 18px;
+    background-color: #99ccff; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  button:hover {
+    background-color: #66a3ff; /* Darker blue on hover */
+    cursor: pointer; /* Change cursor on hover */
+  }
+  
+  /* Additional styles for brackets */
+  button:nth-child(1),
+  button:nth-child(2) {
+    background-color: #007bff; /* Blue for opening and closing brackets */
+  }
+  
+  button:nth-child(1):hover,
+  button:nth-child(2):hover {
+    background-color: #0056b3; /* Darker blue on hover for brackets */
+  }
+  
